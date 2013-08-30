@@ -220,6 +220,10 @@ class prepareezpublish {
       command => "/bin/bash /tmp/vagrant-puppet/manifests/preparezpublish.sh",
       path    => "/usr/local/bin/:/bin/",
       require => Package["httpd", "php", "php-cli", "php-gd" ,"php-pgsql", "php-pear", "php-xml", "php-mbstring", "php-pecl-apc", "php-process", "curl.x86_64"]
+    } ~>
+    exec { "Fix Permissions":
+      command => "/bin/chown -R apache:apache /var/www/html/",
+      path => "/usr/bin:/usr/sbin:/bin:/usr/local/bin",
     }
 }
 
