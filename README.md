@@ -43,4 +43,8 @@ eZ Publish 5 Project:
   environment: dev or prod
 ```
 
-Built @ [cleverti](http://www.cleverti.com) by Pedro Resende
+## COPYRIGHT
+Copyright (C) 1999-2013 eZ Systems AS. All rights reserved.
+
+## LICENSE
+http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
